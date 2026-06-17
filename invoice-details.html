@@ -506,12 +506,16 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="hidden tab-item" id="order">
+                                 <div class="hidden tab-item" id="order">
                                     <ul>
                                         <li class="menu-title text-[13px] text-(--sidebar-title) font-semibold mb-3">Order History</li>
                                         <li>
-                                            <a href="all-generators.html"
+                                            <a href="recent-order.html"
                                                 class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i class="icon-shopping-cart me-2"></i>Recent Order</a>
+                                        </li>
+                                        <li>
+                                            <a href="cancel-order.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i class="icon-git-branch me-2"></i>cancel Order</a>
                                         </li>
                                         <li>
                                             <a href="all-branch-order.html"
@@ -563,7 +567,7 @@
 								<li><span class="text-default">/</span></li>
 								<li><a href="invoices.html" class="hover:text-primary">Invoice</a></li>
 								<li><span class="text-default">/</span></li>
-								<li aria-current="page" class=" text-gray-900">Invoice Details</li>
+								<li aria-current="page" class=" text-gray-900">PURCHASE ORDER</li>
 							</ol>
 						</nav>
 					</div>  
@@ -578,8 +582,8 @@
                         <div class="bg-white border border-border-color rounded-lg shadow p-5 mb-6" id="printableCard"> 
                             <div class="flex flex-wrap gap-4 items-center sm:justify-between justify-center border-b border-border-color pb-5 mb-6"> 
 								<div class="w-[177px]">
-									<img class="w-full dark:hidden" src="assets/logo-BvGEywr5.svg" alt="logo">
-									<img class="w-full hidden dark:block!" src="assets/logo-white-JytImY0Y.svg" alt="logo">
+									<img class="w-full dark:hidden" src="assets/img/trophy/logo-2.png" alt="logo">
+									<img class="w-full hidden dark:block!" src="assets/img/trophy/fav.png" alt="logo">
 								</div> 
 								<div class="flex items-center flex-wrap gap-x-10 gap-y-5">
 									<div class="sm:text-end text-center"> 
@@ -597,7 +601,7 @@
 								</div>
 							</div>
 							<div class="flex items-center justify-between flex-wrap mb-6">
-								<h4>Invoice Details</h4>
+								<h4>PURCHASE ORDER</h4>
 								<p class="text-dark font-medium flex items-center gap-3">Status: <span class="inline-flex items-center badge rounded-lg text-xs font-medium bg-success-50 text-success border border-success"><i class="icon icon-check me-1"></i> Paid</span></p>
 							</div> 
 							<div class="border border-border-color p-5 mb-6 rounded-lg">
@@ -605,26 +609,26 @@
 									<div class="md:col-span-6 col-span-12">
 										<p class="mb-4 text-dark font-medium">Billed From</p>
 										<div class="flex items-center flex-wrap mb-4 gap-3 p-3 border border-border-color rounded-lg bg-light">
-											<img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%208.4376C19.891%208.4376%2019.7803%208.43002%2019.6719%208.43294C19.7809%208.43119%2019.8922%208.42188%2020%208.42188V8.4376Z'%20fill='%234A5565'/%3e%3cpath%20d='M2.29192%2022.0106V20.4616C2.29192%2010.6744%2010.0342%202.38728%2019.8208%202.28995C29.7257%202.19146%2037.8048%2010.27%2037.7069%2020.1755C37.6101%2029.9627%2029.323%2037.7061%2019.5352%2037.7061C18.0987%2037.7061%2016.9343%2036.5417%2016.9343%2035.1051V27.4107C16.9343%2025.7177%2018.3067%2024.3453%2019.9997%2024.3453C21.6927%2024.3453%2023.0651%2025.7177%2023.0651%2027.4107V31.1638C28.6149%2029.6392%2032.5102%2024.0772%2031.382%2017.8473C30.5434%2013.2142%2026.8293%209.48204%2022.1997%208.62418C21.4537%208.48606%2020.7212%208.43769%2019.9997%208.43769V8.42197C19.8919%208.42197%2019.7806%208.43128%2019.6716%208.43303C19.5713%208.43594%2019.4711%208.43769%2019.3709%208.44352C13.2295%208.65449%205.8632%2012.0334%202.29192%2022.0106Z'%20fill='url(%23paint0_linear_1134_24406)'/%3e%3cpath%20d='M19.3718%208.44531C13.2794%208.77342%208.42255%2013.8273%208.42255%2020.0001V34.643C8.42255%2036.336%207.05011%2037.7085%205.35714%2037.7085C3.66416%2037.7085%202.29171%2036.336%202.29171%2034.643V22.0124C5.86298%2012.0352%2013.2293%208.65628%2019.3718%208.44531Z'%20fill='url(%23paint1_linear_1134_24406)'/%3e%3cpath%20d='M24.111%2018.6378L20.8502%2019.8353L19.6368%2023.0902L18.4392%2019.8294L15.1843%2018.616L18.4451%2017.4184L19.6586%2014.1636L20.8561%2017.4243L24.111%2018.6378Z'%20fill='url(%23paint2_linear_1134_24406)'/%3e%3cpath%20d='M26.0749%2014.0398L24.7502%2014.5263L24.2573%2015.8486L23.7708%2014.5239L22.4485%2014.0309L23.7732%2013.5444L24.2661%2012.2221L24.7526%2013.5468L26.0749%2014.0398Z'%20fill='url(%23paint3_linear_1134_24406)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1134_24406'%20x1='21.5672'%20y1='33.2429'%20x2='17.6287'%20y2='7.94212'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%235711F6'/%3e%3cstop%20offset='0.5'%20stop-color='%239614EB'/%3e%3cstop%20offset='1'%20stop-color='%23FF1ADE'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_1134_24406'%20x1='5.99286'%20y1='14.1017'%20x2='11.3239'%20y2='34.0911'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%235711F6'/%3e%3cstop%20offset='0.5'%20stop-color='%239614EB'/%3e%3cstop%20offset='1'%20stop-color='%23FF1ADE'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_1134_24406'%20x1='16.5589'%20y1='17.1615'%20x2='24.3278'%20y2='18.3903'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%235711F6'/%3e%3cstop%20offset='0.5'%20stop-color='%239614EB'/%3e%3cstop%20offset='1'%20stop-color='%23FF1ADE'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint3_linear_1134_24406'%20x1='16.5589'%20y1='17.1615'%20x2='24.3278'%20y2='18.3903'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%235711F6'/%3e%3cstop%20offset='0.5'%20stop-color='%239614EB'/%3e%3cstop%20offset='1'%20stop-color='%23FF1ADE'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="logo">
+											<img src="assets/img/trophy/logo-2.png" alt="logo" style="width: 170px;">
 											<div>
-												<p class="text-dark font-semibold mb-1">DreamsAI</p>
-												<p>support@dreamsai.com</p>
+												<p class="text-dark font-semibold mb-1">Trophy House</p>
+												<p>trophyhouse2000@gmail.com</p>
 											</div>
 										</div> 
-										<p class="mb-2 flex items-center gap-1"><i class="icon-phone"></i> +1 84920 28492</p>
-										<p class="flex items-center gap-1"><i class="icon-map-pin"></i> 20, Chicago Avenue, Orosi, CA 93647</p>
+										<p class="mb-2 flex items-center gap-1"><i class="icon-phone"></i> Khan :- +91 9096466587</p>
+										<p class="flex items-center gap-1"><i class="icon-map-pin"></i> 08/90 Trinity Street, Manik Bldg Iind Flr 1st Marine Street, Dhobitalao Metro Mumbai, 400002 .</p>
 									</div>
 									<div class="md:col-span-6 col-span-12">
 										<p class="mb-4 text-dark font-medium">Billed To</p>
 										<div class="flex items-center flex-wrap mb-4 gap-3 p-3 border border-border-color rounded-lg bg-light">
 											<img src="assets/avatar-02-CrDLg8sF.jpg" class="rounded-full w-[40px]" alt="logo">
 											<div>
-												<p class="text-dark font-semibold mb-1">Jack Michalak</p>
-												<p>jack@example.com</p>
+												<p class="text-dark font-semibold mb-1">M/S Vasai Trophy House</p>
+												<p>vasaitrophyhouse@.com</p>
 											</div>
 										</div>
 										<p class="mb-2 flex items-center gap-1"><i class="icon-phone"></i> +1 46284 92093</p>
-										<p class="flex items-center gap-1"><i class="icon-map-pin"></i> 39, Hampton Flat, Boston, MA 02110</p>
+										<p class="flex items-center gap-1"><i class="icon-map-pin"></i>Vasai</p>
 									</div>
 								</div>
 							</div>
@@ -632,48 +636,122 @@
 								<table class="table-auto mb-0 w-full">
 									<thead class="border-b border-border-color">
 										<tr> 
-											<th class="px-4 py-2 bg-light text-dark text-start">Item</th> 
-											<th class="px-4 py-2 bg-light text-dark text-start">Description</th> 
-											<th class="px-4 py-2 bg-light text-dark text-start">Qty</th> 
-											<th class="px-4 py-2 bg-light text-dark text-start">Amount</th> 
+											<th class="px-4 py-2 bg-light text-dark text-start">#</th> 
+											<th class="px-4 py-2 bg-light text-dark text-start">DESCRIPTION</th> 
+											<th class="px-4 py-2 bg-light text-dark text-start">CODE</th> 
+											<th class="px-4 py-2 bg-light text-dark text-start">SIZE</th> 
+											<th class="px-4 py-2 bg-light text-dark text-start">UNIT PRICE</th> 
+											<th class="px-4 py-2 bg-light text-dark text-start">QUANTITY</th> 
+											<th class="px-4 py-2 bg-light text-dark text-start">DISC %</th> 
 											<th class="px-4 py-2 bg-light text-dark text-start">Total</th>  
 										</tr>
 									</thead>
 									<tbody class="">
 										<tr class="border-b border-border-color"> 
 											<td class="px-4 py-3 text-start">
-												AI Agent Execution
+												1
 											</td>
 											<td class="px-4 py-3 text-start">
-												Task automation & decision handling
+												RI 4589
 											</td>
 											<td class="px-4 py-3 text-start">
-												120
+												C
 											</td>
 											<td class="px-4 py-3 text-start">
-												$20
+												6.5"
 											</td>
 											<td class="px-4 py-3 text-start">
-												$240
+												130
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												20
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												50
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												1300
 											</td> 
 										</tr>
-										<tr> 
+										<tr class="border-b border-border-color"> 
 											<td class="px-4 py-3 text-start">
-												Data Processing
+												1
 											</td>
 											<td class="px-4 py-3 text-start">
-												Structured data analysis
+												RI 4589
 											</td>
 											<td class="px-4 py-3 text-start">
-												230
+												C
 											</td>
 											<td class="px-4 py-3 text-start">
-												$50
+												6.5"
 											</td>
 											<td class="px-4 py-3 text-start">
-												$450
+												130
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												20
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												50
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												1300
 											</td> 
 										</tr>
+                                        <tr class="border-b border-border-color"> 
+											<td class="px-4 py-3 text-start">
+												1
+											</td>
+											<td class="px-4 py-3 text-start">
+												RI 4589
+											</td>
+											<td class="px-4 py-3 text-start">
+												C
+											</td>
+											<td class="px-4 py-3 text-start">
+												6.5"
+											</td>
+											<td class="px-4 py-3 text-start">
+												130
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												20
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												50
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												1300
+											</td> 
+										</tr>
+                                        <tr class="border-b border-border-color"> 
+											<td class="px-4 py-3 text-start">
+												1
+											</td>
+											<td class="px-4 py-3 text-start">
+												RI 4589
+											</td>
+											<td class="px-4 py-3 text-start">
+												C
+											</td>
+											<td class="px-4 py-3 text-start">
+												6.5"
+											</td>
+											<td class="px-4 py-3 text-start">
+												130
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												20
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												50
+											</td> 
+                                            <td class="px-4 py-3 text-start">
+												1300
+											</td> 
+										</tr>
+
 									</tbody>
 								</table> 
 							</div> 
@@ -689,8 +767,7 @@
 								<div class="col-span-6 xxl:col-span-4 xxl:block hidden"></div>
 								<div class="md:col-span-6 xxl:col-span-4 col-span-12"> 
 									<p class="flex items-center justify-between mb-2"><span class="text-dark font-medium">Subtotal:</span>$690</p>
-									<p class="flex items-center justify-between mb-2"><span class="text-dark font-medium">Platform fee:</span>$10</p>
-									<p class="flex items-center justify-between mb-2"><span class="text-dark font-medium">Tax(5%):</span>$34.50</p>
+									
 									<p class="flex items-center justify-between mb-2 pb-2 border-b border-border-color"><span class="text-dark font-medium">Discount(5%):</span><span class="text-danger">$34.50</span></p> 
 									<p class="flex items-center justify-between mb-2 text-dark font-semibold"><span>Grand Total:</span>$700</p> 
 									<p class="flex items-center justify-between"><span class="text-dark font-medium">In words:</span>Dollars Seven Hundread</p>
@@ -707,7 +784,7 @@
 								</div> 
 								<div class="sm:col-span-3 col-span-12"> 
 									<div class="flex justify-center sm:items-end items-center flex-col h-full">
-										<img src="assets/signature-AjttdCl1.svg" alt="Signature" class="dark:invert">
+										<img src="assets/img/trophy/sign.png" alt="Signature" class="dark:invert">
 										<p>Authorized Signature</p>
 									</div>
 								</div> 

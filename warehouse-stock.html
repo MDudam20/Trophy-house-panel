@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-parent="all-branch">
+<html lang="en" data-parent="Warehouse-stock">
+
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
@@ -36,7 +37,7 @@
     <!-- Main Wrapper -->
     <div class="main-wrapper">
 
-         <!-- Topbar Start -->
+        <!-- Topbar Start -->
         <header class="navbar-header">
             <div class="topbar-menu flex items-center justify-between gap-2">
                 <div class="flex items-center gap-3">
@@ -567,7 +568,14 @@
                                     </a>
                                 </li>
                                 <li><span class="text-default">/</span></li>
-                                <li aria-current="page" class="text-gray-900">All Branch</li>
+                                <li class="inline-flex items-center">
+                                    <a href="all_warehouse.html"
+                                        class="inline-flex items-center gap-1 text-gray-600 hover:text-primary">
+                                        Metro Trophy House
+                                    </a>
+                                </li>
+                                <li><span class="text-default">/</span></li>
+                                <li aria-current="page" class="text-gray-900"> Product</li>
                             </ol>
                         </nav>
                     </div>
@@ -593,12 +601,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button"
-                            class="btn bg-primary border border-primary text-white text-center flex items-center gap-x-2 hover:bg-primary-800 hover:border-primary-800 hover:text-white"
-                            aria-haspopup="dialog" aria-expanded="false" aria-controls="add-branch"
-                            data-hs-overlay="#add-branch">
-                            <i class="icon-plus"></i>Add New Branch
-                        </button>
+                       
                     </div>
                 </div>
                 <!--End Breadcrumb -->
@@ -607,7 +610,7 @@
                 <div class="grid grid-cols-1">
                     <div class="bg-white rounded-md border border-border-color">
                         <div class="px-4 py-3 flex items-center justify-between flex-wrap gap-2">
-                            <h5 class="text-[17.5px]">All Branches</h5>
+                            <h5 class="text-[17.5px]">All Metro Trophy House Stock Here</h5>
                             <div class="flex flex-wrap items-center gap-2">
                                 <div id="tablesearch"></div>
                                 <div
@@ -649,97 +652,85 @@
                                 <thead class="border-b border-t border-border-color">
                                     <tr>
                                         <th class="px-4 py-2 bg-light text-dark text-start">Sr No.</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Branch Name</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Location</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Manager Name</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Branch Address</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Phone No</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">GST</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Series</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Email</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Details</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Action</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Selling Code</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Purchase Code</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Image</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Item</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Size</th>                    
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Price</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Quantity</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="border-b border-border-color">
-                                        <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                        <td class="px-4 py-3 text-start"><a href="#"
+                                                class="inline-block hover:text-primary hover:underline">1</a>
                                         </td>
-                                        <td class="px-4 py-3 text-start">
-                                            <p class="text-dark font-medium">Vasai Trophy House</p>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">
-                                            <div class="flex items-center gap-2">
-                                               <p class="text-dark font-medium">Vasai</p>
-                                            </div>
-                                        </td>
+                                        <td class="px-4 py-3 text-start">TH.1105</td>
+                                        <td class="px-4 py-3 text-start">TH.1105</td>
                                         <td class="px-4 py-3 text-start">
                                             <div class="flex items-center gap-2">
-                                               <p class="text-dark font-medium">Guljar</p>
+                                                <span class="flex shrink-0">
+                                                    <img class="w-8 h-8 border border-border-color"
+                                                        src="assets/avatar-01-C0dz1640.jpg" alt="avatar">
+                                                </span>
+                                                
                                             </div>
                                         </td>
-                                        <td class="px-4 py-3 text-start">Nanda Industrial Estate,Gala No 13, Sativali, Highway No 8, Near Bajrang Dhaba, Vasai East, Palghar 401208</td>
-                                        <td class="px-4 py-3 text-start">+91 8433722257	</td>
-                                        <td class="px-4 py-3 text-start">27AAXFT5405F1ZT</td>
-                                        <td class="px-4 py-3 text-start">GTH-2026-27/</td>
-                                        <td class="px-4 py-3 text-start">trophyhousevasai@rediffmail.com</td>
-                                        <td class="px-4 py-3 text-start">
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-success-100 border border-success text-success text-center hover:bg-success-200 rounded-full"><i
-                                                    class="icon icon-eye"></i></button>
-                                        </td>
-                                        <td class="px-4 py-3 text-start flex gap-2">
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-primary-100 border border-primary text-primary text-center hover:bg-primary-200 rounded-full"><i
-                                                    class="icon icon-square-pen"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-success-100 border border-success text-success text-center hover:bg-success-200 rounded-full"><i
-                                                    class="icon icon-eye"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-danger-100 border border-danger text-danger text-center hover:bg-danger-200 rounded-full"><i
-                                                    class="icon icon-trash-2"></i></button>
-                                        </td>
+                                        <td class="px-4 py-3 text-start">A</td>
+                                        <td class="px-4 py-3 text-start">A/4</td>
+                                        <td class="px-4 py-3 text-start">15</td>
+                                        <td class="px-4 py-3 text-start">4</td>
+                                        
+                                       
                                     </tr>
                                     <tr class="border-b border-border-color">
-                                        <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                        <td class="px-4 py-3 text-start"><a href="#"
+                                                class="inline-block hover:text-primary hover:underline">1</a>
                                         </td>
-                                        <td class="px-4 py-3 text-start">
-                                            <p class="text-dark font-medium">Metro Trophy House</p>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">
-                                            <div class="flex items-center gap-2">
-                                               <p class="text-dark font-medium">Metro</p>
-                                            </div>
-                                        </td>
+                                        <td class="px-4 py-3 text-start">TH.1105</td>
+                                        <td class="px-4 py-3 text-start">TH.1105</td>
                                         <td class="px-4 py-3 text-start">
                                             <div class="flex items-center gap-2">
-                                               <p class="text-dark font-medium">Sameer</p>
+                                                <span class="flex shrink-0">
+                                                    <img class="w-8 h-8 border border-border-color"
+                                                        src="assets/avatar-01-C0dz1640.jpg" alt="avatar">
+                                                </span>
+                                                
                                             </div>
                                         </td>
-                                        <td class="px-4 py-3 text-start">82 Tyson House, Trinity Street, Near Metro Cinema, Next to Kit-Kat Restaurant, Dhobitalao, Mumbai - 400 002</td>
-                                        <td class="px-4 py-3 text-start">+91 8433722256 / +91 8433900564		</td>
-                                        <td class="px-4 py-3 text-start">27AAXFT5405F1ZT</td>
-                                        <td class="px-4 py-3 text-start">GTH-2026-27/</td>
-                                        <td class="px-4 py-3 text-start">trophyhouse@rediffmail.com</td>
+                                        <td class="px-4 py-3 text-start">A</td>
+                                        <td class="px-4 py-3 text-start">A/4</td>
+                                        <td class="px-4 py-3 text-start">15</td>
+                                        <td class="px-4 py-3 text-start">4</td>
+                                        
+                                       
+                                    </tr>
+                                    <tr class="border-b border-border-color">
+                                        <td class="px-4 py-3 text-start"><a href="#"
+                                                class="inline-block hover:text-primary hover:underline">1</a>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">TH.1105</td>
+                                        <td class="px-4 py-3 text-start">TH.1105</td>
                                         <td class="px-4 py-3 text-start">
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-success-100 border border-success text-success text-center hover:bg-success-200 rounded-full"><i
-                                                    class="icon icon-eye"></i></button>
+                                            <div class="flex items-center gap-2">
+                                                <span class="flex shrink-0">
+                                                    <img class="w-8 h-8 border border-border-color"
+                                                        src="assets/avatar-01-C0dz1640.jpg" alt="avatar">
+                                                </span>
+                                                
+                                            </div>
                                         </td>
-                                        <td class="px-4 py-3 text-start flex gap-2">
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-primary-100 border border-primary text-primary text-center hover:bg-primary-200 rounded-full"><i
-                                                    class="icon icon-square-pen"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-success-100 border border-success text-success text-center hover:bg-success-200 rounded-full"><i
-                                                    class="icon icon-eye"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-danger-100 border border-danger text-danger text-center hover:bg-danger-200 rounded-full"><i
-                                                    class="icon icon-trash-2"></i></button>
-                                        </td>
+                                        <td class="px-4 py-3 text-start">A</td>
+                                        <td class="px-4 py-3 text-start">A/4</td>
+                                        <td class="px-4 py-3 text-start">15</td>
+                                        <td class="px-4 py-3 text-start">4</td>
+                                        
+                                       
                                     </tr>
                                     
-                                    
+                                   
                                 </tbody>
                             </table>
                             <div class="grid grid-cols-12 px-4 gap-2 py-3">
@@ -782,26 +773,49 @@
     <!-- End Main Wrapper -->
 
     <!-- Add User Start -->
-    <div id="add-branch"
+    <div id="add-user"
         class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-0 start-0 z-80 opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none"
         role="dialog" tabindex="-1">
         <div class="min-h-screen flex items-center justify-center px-4">
             <div class="max-w-[800px] w-full mx-auto">
                 <div class="flex flex-col bg-white border p-6 border-border-color rounded-lg pointer-events-auto m-5">
                     <div class="flex justify-between items-center mb-5 pb-5 border-b border-border-color ">
-                        <h4>Add New Branch</h4>
+                        <h4>Add User</h4>
                         <button type="button"
                             class="size-7 inline-flex justify-center items-center rounded-full border border-border-color bg-white text-gray-900 text-base hover:bg-danger hover:border-danger hover:text-white dark:hover:text-dark focus:outline-hidden focus:bg-danger cursor-pointer"
-                            aria-label="Close" data-hs-overlay="#add-branch">
+                            aria-label="Close" data-hs-overlay="#add-user">
                             <i class="icon-x"></i>
                         </button>
                     </div>
                     <form action="#">
                         <!-- Start grid -->
                         <div class="grid md:grid-cols-12 gap-4 mb-5">
-                            
+                            <div class="col-span-12">
+                                <p class="mb-1 block text-sm font-semibold text-dark">Profile Image <span
+                                        class="text-danger">*</span></p>
+                                <div
+                                    class="flex flex-wrap items-center gap-4 p-5 border border-dashed border-border-color rounded-lg bg-white cursor-pointer hover:border-primary transition">
+                                    <div
+                                        class="flex items-center justify-center w-[64px] h-[64px] text-[20px] rounded-full bg-light border border-border-color">
+                                        <i class="icon-image"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-dark mb-2 font-medium">
+                                            Drag &amp; drop an image or
+                                            <span class="text-primary relative cursor-pointer inline-block">
+                                                browse files
+                                                <input type="file"
+                                                    class="absolute w-full h-full top-0 left-0 opacity-0 cursor-pointer"
+                                                    multiple="">
+                                            </span>
+                                        </p>
+                                        <p class="text-xs text-muted-foreground mt-1">Supported Formats : JPG, PNG</p>
+                                    </div>
+                                </div>
+                                <input type="file" accept=".jpg,.jpeg,.png" class="hidden">
+                            </div>
                             <div class="sm:col-span-6 col-span-12">
-                                <label for="user-name" class="mb-1 block text-sm font-semibold text-dark">Enter Branch Name :
+                                <label for="user-name" class="mb-1 block text-sm font-semibold text-dark">User Name
                                     <span class="text-danger">*</span></label>
                                 <div class="relative">
                                     <input id="user-name" type="text"
@@ -825,26 +839,22 @@
                                 </div>
                             </div>
                             <div class="sm:col-span-6 col-span-12">
-                                <label for="phone-number" class="mb-1 block text-sm font-semibold text-dark">Enter GST No. <span class="text-danger">*</span></label>
-                                <div class="relative">
-                                    <input id="phone-number" type="text"
-                                        class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
-                                </div>
+                                <label for="role" class="mb-1 block text-sm font-semibold text-dark">Role <span
+                                        class="text-danger">*</span></label>
+                                <select id="role" data-choices data-choices-sorting-false>
+                                    <option>Select</option>
+                                    <option>System Monitoring Agent</option>
+                                    <option>Live Support Agent</option>
+                                    <option>QA Validation Agent</option>
+                                    <option>Background Service Agent</option>
+                                </select>
                             </div>
-                            <div class="sm:col-span-12 col-span-12">
-                                <label for="phone-number" class="mb-1 block text-sm font-semibold text-dark">Branch Series : <span class="text-danger">*</span></label>
-                                <div class="relative">
-                                    <input id="phone-number" type="text"
-                                        class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
-                                </div>
-                            </div>
-                           
                             <div class="col-span-12">
-                                <label for="notes" class="mb-1 block text-sm font-semibold text-dark">Enter Branch Address :</label>
+                                <label for="notes" class="mb-1 block text-sm font-semibold text-dark">Notes</label>
                                 <textarea id="notes"
                                     class="py-2.5 px-2.5 sm:py-2.5 sm:px-2.5 block text-dark w-full bg-white border-border-color rounded-lg sm:text-sm text-xs focus:ring-0 disabled:opacity-50 disabled:pointer-events-none"
                                     rows="3" placeholder=""></textarea>
-                                
+                                <p class="text-xs text-gray-600 mt-1">Minimum 50 Characters Required</p>
                             </div>
                         </div>
                         <!-- End grid -->
@@ -852,12 +862,12 @@
                     <div class="flex justify-end items-center gap-x-2 pt-5 border-t border-border-color">
                         <button type="button"
                             class="btn bg-white border border-border-color font-semibold text-gray-900 text-center inline-flex items-center justify-center gap-x-2  hover:bg-primary hover:border-primary hover:text-white"
-                            data-hs-overlay="#add-branch">
+                            data-hs-overlay="#add-user">
                             Cancel
                         </button>
                         <button type="button"
                             class="btn inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-primary-800 focus:outline-hidden focus:bg-primary-800 disabled:opacity-50 disabled:pointer-events-none">
-                            Add Branch
+                            Add User
                         </button>
                     </div>
                 </div>
@@ -983,17 +993,8 @@
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
     <script src="assets/js/apex-chart-data.js"></script>
 
-
-
-
-
-
-
-
     <!-- Choices Js -->
     <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-
-
 
     <!-- Jquery JS -->
     <script src="assets/libs/jquery/jquery.min.js"></script>
@@ -1002,33 +1003,8 @@
     <script src="assets/libs/datatables.net/js/dataTables.min.js"></script>
     <script src="assets/js/datatable.js"></script>
 
-
-
     <!-- Flatpickr JS -->
     <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>

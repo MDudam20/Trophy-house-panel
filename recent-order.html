@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-parent="all-branch">
+<html lang="en" data-parent="order">
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
@@ -36,7 +36,7 @@
     <!-- Main Wrapper -->
     <div class="main-wrapper">
 
-         <!-- Topbar Start -->
+        <!-- Topbar Start -->
         <header class="navbar-header">
             <div class="topbar-menu flex items-center justify-between gap-2">
                 <div class="flex items-center gap-3">
@@ -567,7 +567,14 @@
                                     </a>
                                 </li>
                                 <li><span class="text-default">/</span></li>
-                                <li aria-current="page" class="text-gray-900">All Branch</li>
+                                <li class="inline-flex items-center">
+                                    <a href="index.html"
+                                        class="inline-flex items-center gap-1 text-gray-600 hover:text-primary">
+                                        <i class="icon icon-house"></i>All Recent Orders
+                                    </a>
+                                </li>
+                                <li><span class="text-default">/</span></li>
+                                <li aria-current="page" class="text-gray-900">Recent Order Product</li>
                             </ol>
                         </nav>
                     </div>
@@ -593,170 +600,256 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button"
-                            class="btn bg-primary border border-primary text-white text-center flex items-center gap-x-2 hover:bg-primary-800 hover:border-primary-800 hover:text-white"
-                            aria-haspopup="dialog" aria-expanded="false" aria-controls="add-branch"
-                            data-hs-overlay="#add-branch">
-                            <i class="icon-plus"></i>Add New Branch
-                        </button>
+                       
                     </div>
                 </div>
                 <!--End Breadcrumb -->
 
-                <!-- Start grid -->
-                <div class="grid grid-cols-1">
-                    <div class="bg-white rounded-md border border-border-color">
-                        <div class="px-4 py-3 flex items-center justify-between flex-wrap gap-2">
-                            <h5 class="text-[17.5px]">All Branches</h5>
-                            <div class="flex flex-wrap items-center gap-2">
-                                <div id="tablesearch"></div>
-                                <div
-                                    class="hs-dropdown [--placement:bottom-right] [--auto-close:inside] relative inline-flex">
-                                    <button type="button"
-                                        class="hs-dropdown-toggle btn h-[35px] cursor-pointer inline-flex items-center gap-x-2 font-normal rounded-lg border border-border-color bg-white text-gray-900 hover:bg-primary hover:border-primary hover:text-white focus:bg-primary focus:border-primary focus:text-white  focus:outline-hidden"
-                                        aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                                        <i class="icon-arrow-up-narrow-wide"></i>Sort
-                                    </button>
+                <div class=" md:grid-cols-12 xl:grid-cols-12 ">
+					<div class="md:col-span-12 xl:col-span-12 flex">
+						<div class="bg-white dark:bg-dark-card rounded-lg border border-border-color w-full p-5 mb-6">
+							<div class="flex items-center justify-between gap-2 flex-wrap mb-5">
+								<h2 class="inline-flex items-center text-lg max-lg:text-[17px]"><i class="icon-list-ordered me-2"></i>Recent order Product</h2>
+								<a href="#" class="text-primary font-medium hover:underline">View All</a>
+							</div>
+							<div class="table-responsive overflow-auto">
+								<table class="table-auto mb-0 w-full border border-border-color">
+									<thead class="border-b border-border-color"><tr>
+										<th class="px-4 py-2 bg-light text-dark text-start">Sr No.</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Invoice No</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Branch</th> 
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Selling Code</th> 
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Image</th> 
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Code</th> 
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Size</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Price</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Qty</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Discount</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Total</th>
+									</tr></thead>
+									<tbody>
+										<tr class="border-b border-border-color">
+                                        <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">TH-0428</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">Trophy House</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">THC.1233</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <div class="flex items-center gap-2">
+                                                <span class="flex shrink-0">
+                                                    <img class="w-8 h-8 border border-border-color"
+                                                        src="assets/avatar-01-C0dz1640.jpg" alt="avatar">
+                                                </span>
+                                                
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">A</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">5.5"</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">120</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">1</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start flex justify-between gap-2">
+                                            <input id="user-name" type="text"
+                                                class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
+                                            <button type="button" id="addRow"
+                                                class="btn inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-primary-800 focus:outline-hidden focus:bg-primary-800 disabled:opacity-50 disabled:pointer-events-none flex justify-center">
+                                                save
+                                            </button>
+                                        </td>
+                                       <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">10</p>
+                                        </td>
+                                    </tr>
+                                   <tr class="border-b border-border-color">
+                                        <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">TH-0428</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">Trophy House</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">THC.1233</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <div class="flex items-center gap-2">
+                                                <span class="flex shrink-0">
+                                                    <img class="w-8 h-8 border border-border-color"
+                                                        src="assets/avatar-01-C0dz1640.jpg" alt="avatar">
+                                                </span>
+                                                
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">A</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">5.5"</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">120</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">1</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start flex justify-between gap-2">
+                                            <input id="user-name" type="text"
+                                                class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
+                                            <button type="button" id="addRow"
+                                                class="btn inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-primary-800 focus:outline-hidden focus:bg-primary-800 disabled:opacity-50 disabled:pointer-events-none flex justify-center">
+                                                save
+                                            </button>
+                                        </td>
+                                       <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">10</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-border-color">
+                                        <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">TH-0428</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">Trophy House</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">THC.1233</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <div class="flex items-center gap-2">
+                                                <span class="flex shrink-0">
+                                                    <img class="w-8 h-8 border border-border-color"
+                                                        src="assets/avatar-01-C0dz1640.jpg" alt="avatar">
+                                                </span>
+                                                
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">A</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">5.5"</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">120</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">1</p>
+                                        </td>
+                                        <td class="px-4 py-3 text-start flex justify-between gap-2">
+                                            <input id="user-name" type="text"
+                                                class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
+                                            <button type="button" id="addRow"
+                                                class="btn inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-primary-800 focus:outline-hidden focus:bg-primary-800 disabled:opacity-50 disabled:pointer-events-none flex justify-center">
+                                                save
+                                            </button>
+                                        </td>
+                                       <td class="px-4 py-3 text-start">
+                                            <p class="text-dark font-medium">10</p>
+                                        </td>
+                                    </tr>
+                                    
+									</tbody>
+                                    <tfoot>
 
-                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 min-w-50 bg-white border border-border-color shadow rounded-lg mt-2 z-1 hidden"
-                                        role="menu" aria-orientation="vertical" tabindex="-1"
-                                        data-placement="bottom-end"
-                                        style="transform: translate3d(1051.33px, 207.833px, 0px);">
-                                        <div class="p-2 space-y-1">
-                                            <a class="flex items-center px-4 py-2 rounded-lg text-gray-900 hover:bg-primary-50 hover:text-primary hover:bg-primary-50 focus:outline-hidden focus:bg-white"
-                                                href="#">
-                                                Newest
-                                            </a>
-                                            <a class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary hover:bg-primary-50 focus:outline-hidden focus:bg-white"
-                                                href="#">
-                                                Oldest
-                                            </a>
-                                            <a class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary focus:outline-hidden focus:bg-white"
-                                                href="#">
-                                                Recently Created
-                                            </a>
-                                            <a class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary focus:outline-hidden focus:bg-white"
-                                                href="#">
-                                                Last Modified
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <table class="datatable">
-                                <thead class="border-b border-t border-border-color">
-                                    <tr>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Sr No.</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Branch Name</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Location</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Manager Name</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Branch Address</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Phone No</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">GST</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Series</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Email</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Details</th>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="border-b border-border-color">
-                                        <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">
-                                            <p class="text-dark font-medium">Vasai Trophy House</p>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">
-                                            <div class="flex items-center gap-2">
-                                               <p class="text-dark font-medium">Vasai</p>
-                                            </div>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">
-                                            <div class="flex items-center gap-2">
-                                               <p class="text-dark font-medium">Guljar</p>
-                                            </div>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">Nanda Industrial Estate,Gala No 13, Sativali, Highway No 8, Near Bajrang Dhaba, Vasai East, Palghar 401208</td>
-                                        <td class="px-4 py-3 text-start">+91 8433722257	</td>
-                                        <td class="px-4 py-3 text-start">27AAXFT5405F1ZT</td>
-                                        <td class="px-4 py-3 text-start">GTH-2026-27/</td>
-                                        <td class="px-4 py-3 text-start">trophyhousevasai@rediffmail.com</td>
-                                        <td class="px-4 py-3 text-start">
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-success-100 border border-success text-success text-center hover:bg-success-200 rounded-full"><i
-                                                    class="icon icon-eye"></i></button>
-                                        </td>
-                                        <td class="px-4 py-3 text-start flex gap-2">
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-primary-100 border border-primary text-primary text-center hover:bg-primary-200 rounded-full"><i
-                                                    class="icon icon-square-pen"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-success-100 border border-success text-success text-center hover:bg-success-200 rounded-full"><i
-                                                    class="icon icon-eye"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-danger-100 border border-danger text-danger text-center hover:bg-danger-200 rounded-full"><i
-                                                    class="icon icon-trash-2"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b border-border-color">
-                                        <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">
-                                            <p class="text-dark font-medium">Metro Trophy House</p>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">
-                                            <div class="flex items-center gap-2">
-                                               <p class="text-dark font-medium">Metro</p>
-                                            </div>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">
-                                            <div class="flex items-center gap-2">
-                                               <p class="text-dark font-medium">Sameer</p>
-                                            </div>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">82 Tyson House, Trinity Street, Near Metro Cinema, Next to Kit-Kat Restaurant, Dhobitalao, Mumbai - 400 002</td>
-                                        <td class="px-4 py-3 text-start">+91 8433722256 / +91 8433900564		</td>
-                                        <td class="px-4 py-3 text-start">27AAXFT5405F1ZT</td>
-                                        <td class="px-4 py-3 text-start">GTH-2026-27/</td>
-                                        <td class="px-4 py-3 text-start">trophyhouse@rediffmail.com</td>
-                                        <td class="px-4 py-3 text-start">
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-success-100 border border-success text-success text-center hover:bg-success-200 rounded-full"><i
-                                                    class="icon icon-eye"></i></button>
-                                        </td>
-                                        <td class="px-4 py-3 text-start flex gap-2">
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-primary-100 border border-primary text-primary text-center hover:bg-primary-200 rounded-full"><i
-                                                    class="icon icon-square-pen"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-success-100 border border-success text-success text-center hover:bg-success-200 rounded-full"><i
-                                                    class="icon icon-eye"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-danger-100 border border-danger text-danger text-center hover:bg-danger-200 rounded-full"><i
-                                                    class="icon icon-trash-2"></i></button>
-                                        </td>
-                                    </tr>
-                                    
-                                    
-                                </tbody>
-                            </table>
-                            <div class="grid grid-cols-12 px-4 gap-2 py-3">
-                                <div class="sm:col-span-4 col-span-12">
-                                    <div id="tablelength" class="flex justify-center sm:block"></div>
-                                </div>
-                                <div class="sm:col-span-4 col-span-12 flex items-center justify-center">
-                                    <div id="tablepage" class="flex justify-center sm:block"></div>
-                                </div>
-                                <div class="sm:col-span-4 col-span-12 flex items-center sm:justify-end justify-center">
-                                    <div id="tableinfo" class="flex justify-center sm:block"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End grid -->
+    <tr class="bg-warning text-white">
+
+    <td colspan="20" class="px-2 py-2 text-center">
+        <span class="text-lg font-bold tracking-wider uppercase">
+            Grand Total
+        </span>
+    </td>
+
+    <td class="px-2 py-2 text-center">
+        <span class="text-lg  font-bold">
+            ₹1,215
+        </span>
+    </td>
+
+</tr>
+
+</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+				</div> 
+
+                <div class="bg-white border border-slate-200 rounded-2xl shadow-lg p-5 mt-5">
+
+    <div class="grid lg:grid-cols-2 gap-5">
+
+        <!-- Order Status -->
+        <div>
+            <label class="block font-semibold mb-2">
+                Order Status
+            </label>
+
+            <select class="form-input rounded-xl w-full">
+                <option>Pending</option>
+                <option>Confirmed</option>
+                <option>Delivered</option>
+                <option>Cancelled</option>
+            </select>
+        </div>
+
+        <!-- Remarks -->
+        <div>
+            <label class="block font-semibold mb-2">
+                Remarks
+            </label>
+
+            <input type="text"
+                class="form-input rounded-xl w-full"
+                placeholder="Enter Remarks">
+        </div>
+
+    </div>
+
+    <div class="flex flex-wrap justify-end gap-3 mt-5">
+
+        <a href="invoice-details.html" target="_blank">
+            <button
+            class="px-6 py-3 rounded-xl bg-primary-gradient text-white font-semibold shadow-lg hover:scale-105 transition-all">
+
+            <i class="icon-printer me-2"></i>
+            Print Bill
+        </button>
+        </a>
+
+        <button
+            class="px-6 py-3 rounded-xl bg-success-gradient text-white font-semibold shadow-lg hover:scale-105 transition-all">
+
+            <i class="icon-circle-check me-2"></i>
+            Confirm Order
+        </button>
+
+        <button
+            class="px-6 py-3 rounded-xl bg-info-gradient text-white font-semibold shadow-lg hover:scale-105 transition-all">
+
+            <i class="icon-trash me-2"></i>
+            Cancel Bill
+        </button>
+
+    </div>
+
+</div>
 
             </div>
 
@@ -782,17 +875,17 @@
     <!-- End Main Wrapper -->
 
     <!-- Add User Start -->
-    <div id="add-branch"
+    <div id="add-category"
         class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-0 start-0 z-80 opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none"
         role="dialog" tabindex="-1">
         <div class="min-h-screen flex items-center justify-center px-4">
             <div class="max-w-[800px] w-full mx-auto">
                 <div class="flex flex-col bg-white border p-6 border-border-color rounded-lg pointer-events-auto m-5">
                     <div class="flex justify-between items-center mb-5 pb-5 border-b border-border-color ">
-                        <h4>Add New Branch</h4>
+                        <h4>Add New Category</h4>
                         <button type="button"
                             class="size-7 inline-flex justify-center items-center rounded-full border border-border-color bg-white text-gray-900 text-base hover:bg-danger hover:border-danger hover:text-white dark:hover:text-dark focus:outline-hidden focus:bg-danger cursor-pointer"
-                            aria-label="Close" data-hs-overlay="#add-branch">
+                            aria-label="Close" data-hs-overlay="#add-category">
                             <i class="icon-x"></i>
                         </button>
                     </div>
@@ -800,64 +893,27 @@
                         <!-- Start grid -->
                         <div class="grid md:grid-cols-12 gap-4 mb-5">
                             
-                            <div class="sm:col-span-6 col-span-12">
-                                <label for="user-name" class="mb-1 block text-sm font-semibold text-dark">Enter Branch Name :
+                            <div class=" col-span-12">
+                                <label for="user-name" class="mb-1 block text-sm font-semibold text-dark">Enter Category Name :
                                     <span class="text-danger">*</span></label>
                                 <div class="relative">
                                     <input id="user-name" type="text"
                                         class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
                                 </div>
                             </div>
-                            <div class="sm:col-span-6 col-span-12">
-                                <label for="email-address" class="mb-1 block text-sm font-semibold text-dark">Email
-                                    Address <span class="text-danger">*</span></label>
-                                <div class="relative">
-                                    <input id="email-address" type="text"
-                                        class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
-                                </div>
-                            </div>
-                            <div class="sm:col-span-6 col-span-12">
-                                <label for="phone-number" class="mb-1 block text-sm font-semibold text-dark">Phone
-                                    Number <span class="text-danger">*</span></label>
-                                <div class="relative">
-                                    <input id="phone-number" type="text"
-                                        class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
-                                </div>
-                            </div>
-                            <div class="sm:col-span-6 col-span-12">
-                                <label for="phone-number" class="mb-1 block text-sm font-semibold text-dark">Enter GST No. <span class="text-danger">*</span></label>
-                                <div class="relative">
-                                    <input id="phone-number" type="text"
-                                        class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
-                                </div>
-                            </div>
-                            <div class="sm:col-span-12 col-span-12">
-                                <label for="phone-number" class="mb-1 block text-sm font-semibold text-dark">Branch Series : <span class="text-danger">*</span></label>
-                                <div class="relative">
-                                    <input id="phone-number" type="text"
-                                        class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
-                                </div>
-                            </div>
                            
-                            <div class="col-span-12">
-                                <label for="notes" class="mb-1 block text-sm font-semibold text-dark">Enter Branch Address :</label>
-                                <textarea id="notes"
-                                    class="py-2.5 px-2.5 sm:py-2.5 sm:px-2.5 block text-dark w-full bg-white border-border-color rounded-lg sm:text-sm text-xs focus:ring-0 disabled:opacity-50 disabled:pointer-events-none"
-                                    rows="3" placeholder=""></textarea>
-                                
-                            </div>
                         </div>
                         <!-- End grid -->
                     </form>
                     <div class="flex justify-end items-center gap-x-2 pt-5 border-t border-border-color">
                         <button type="button"
                             class="btn bg-white border border-border-color font-semibold text-gray-900 text-center inline-flex items-center justify-center gap-x-2  hover:bg-primary hover:border-primary hover:text-white"
-                            data-hs-overlay="#add-branch">
+                            data-hs-overlay="#add-category">
                             Cancel
                         </button>
                         <button type="button"
                             class="btn inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-primary-800 focus:outline-hidden focus:bg-primary-800 disabled:opacity-50 disabled:pointer-events-none">
-                            Add Branch
+                            Add Category
                         </button>
                     </div>
                 </div>
@@ -1006,29 +1062,6 @@
 
     <!-- Flatpickr JS -->
     <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>

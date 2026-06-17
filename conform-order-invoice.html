@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-parent="order-day">
+<html lang="en" data-parent="order">
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
@@ -507,12 +507,16 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="hidden tab-item" id="order">
+                                 <div class="hidden tab-item" id="order">
                                     <ul>
                                         <li class="menu-title text-[13px] text-(--sidebar-title) font-semibold mb-3">Order History</li>
                                         <li>
-                                            <a href="all-generators.html"
+                                            <a href="recent-order.html"
                                                 class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i class="icon-shopping-cart me-2"></i>Recent Order</a>
+                                        </li>
+                                        <li>
+                                            <a href="cancel-order.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i class="icon-git-branch me-2"></i>cancel Order</a>
                                         </li>
                                         <li>
                                             <a href="all-branch-order.html"
@@ -601,52 +605,17 @@
                 </div>
                 <!--End Breadcrumb -->
 
-                <!-- Start grid -->
-                <div class="grid grid-cols-1">
-                    <div class="bg-white rounded-md border border-border-color">
-                        <div class="px-4 py-3 flex items-center justify-between flex-wrap gap-2">
-                            <h5 class="text-[17.5px]">All order Product</h5>
-                            <div class="flex flex-wrap items-center gap-2">
-                                <div id="tablesearch"></div>
-                                <div
-                                    class="hs-dropdown [--placement:bottom-right] [--auto-close:inside] relative inline-flex">
-                                    <button type="button"
-                                        class="hs-dropdown-toggle btn h-[35px] cursor-pointer inline-flex items-center gap-x-2 font-normal rounded-lg border border-border-color bg-white text-gray-900 hover:bg-primary hover:border-primary hover:text-white focus:bg-primary focus:border-primary focus:text-white  focus:outline-hidden"
-                                        aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                                        <i class="icon-arrow-up-narrow-wide"></i>Sort
-                                    </button>
-
-                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 min-w-50 bg-white border border-border-color shadow rounded-lg mt-2 z-1 hidden"
-                                        role="menu" aria-orientation="vertical" tabindex="-1"
-                                        data-placement="bottom-end"
-                                        style="transform: translate3d(1051.33px, 207.833px, 0px);">
-                                        <div class="p-2 space-y-1">
-                                            <a class="flex items-center px-4 py-2 rounded-lg text-gray-900 hover:bg-primary-50 hover:text-primary hover:bg-primary-50 focus:outline-hidden focus:bg-white"
-                                                href="#">
-                                                Newest
-                                            </a>
-                                            <a class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary hover:bg-primary-50 focus:outline-hidden focus:bg-white"
-                                                href="#">
-                                                Oldest
-                                            </a>
-                                            <a class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary focus:outline-hidden focus:bg-white"
-                                                href="#">
-                                                Recently Created
-                                            </a>
-                                            <a class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary focus:outline-hidden focus:bg-white"
-                                                href="#">
-                                                Last Modified
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <table class="datatable">
-                                <thead class="border-b border-t border-border-color">
-                                    <tr>
-                                        <th class="px-4 py-2 bg-light text-dark text-start">Sr No.</th>
+                <div class=" md:grid-cols-12 xl:grid-cols-12 ">
+					<div class="md:col-span-12 xl:col-span-12 flex">
+						<div class="bg-white dark:bg-dark-card rounded-lg border border-border-color w-full p-5 mb-6">
+							<div class="flex items-center justify-between gap-2 flex-wrap mb-5">
+								<h2 class="inline-flex items-center text-lg max-lg:text-[17px]"><i class="icon-list-ordered me-2"></i>All order Product</h2>
+								<a href="#" class="text-primary font-medium hover:underline">View All</a>
+							</div>
+							<div class="table-responsive overflow-auto">
+								<table class="table-auto mb-0 w-full border border-border-color">
+									<thead class="border-b border-border-color"><tr>
+										<th class="px-4 py-2 bg-light text-dark text-start">Sr No.</th>
                                         <th class="px-4 py-2 bg-light text-dark text-start">Invoice No</th>
                                         <th class="px-4 py-2 bg-light text-dark text-start">Branch</th> 
                                         <th class="px-4 py-2 bg-light text-dark text-start">Selling Code</th> 
@@ -657,11 +626,9 @@
                                         <th class="px-4 py-2 bg-light text-dark text-start">Qty</th>
                                         <th class="px-4 py-2 bg-light text-dark text-start">Discount</th>
                                         <th class="px-4 py-2 bg-light text-dark text-start">Total</th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="border-b border-border-color">
+									</tr></thead>
+									<tbody>
+										<tr class="border-b border-border-color">
                                         <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
                                         </td>
                                         <td class="px-4 py-3 text-start">
@@ -797,23 +764,92 @@
                                         </td>
                                     </tr>
                                     
-                                </tbody>
-                            </table>
-                            <div class="grid grid-cols-12 px-4 gap-2 py-3">
-                                <div class="sm:col-span-4 col-span-12">
-                                    <div id="tablelength" class="flex justify-center sm:block"></div>
-                                </div>
-                                <div class="sm:col-span-4 col-span-12 flex items-center justify-center">
-                                    <div id="tablepage" class="flex justify-center sm:block"></div>
-                                </div>
-                                <div class="sm:col-span-4 col-span-12 flex items-center sm:justify-end justify-center">
-                                    <div id="tableinfo" class="flex justify-center sm:block"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End grid -->
+									</tbody>
+                                    <tfoot>
+
+    <tr class="bg-warning text-white">
+
+    <td colspan="20" class="px-2 py-2 text-center">
+        <span class="text-lg font-bold tracking-wider uppercase">
+            Grand Total
+        </span>
+    </td>
+
+    <td class="px-2 py-2 text-center">
+        <span class="text-lg  font-bold">
+            ₹1,215
+        </span>
+    </td>
+
+</tr>
+
+</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+				</div> 
+
+                <div class="bg-white border border-slate-200 rounded-2xl shadow-lg p-5 mt-5">
+
+    <div class="grid lg:grid-cols-2 gap-5">
+
+        <!-- Order Status -->
+        <div>
+            <label class="block font-semibold mb-2">
+                Order Status
+            </label>
+
+            <select class="form-input rounded-xl w-full">
+                <option>Pending</option>
+                <option>Confirmed</option>
+                <option>Delivered</option>
+                <option>Cancelled</option>
+            </select>
+        </div>
+
+        <!-- Remarks -->
+        <div>
+            <label class="block font-semibold mb-2">
+                Remarks
+            </label>
+
+            <input type="text"
+                class="form-input rounded-xl w-full"
+                placeholder="Enter Remarks">
+        </div>
+
+    </div>
+
+    <div class="flex flex-wrap justify-end gap-3 mt-5">
+
+        <a href="invoice-details.html" target="_blank">
+            <button
+            class="px-6 py-3 rounded-xl bg-primary-gradient text-white font-semibold shadow-lg hover:scale-105 transition-all">
+
+            <i class="icon-printer me-2"></i>
+            Print Bill
+        </button>
+        </a>
+
+        <button
+            class="px-6 py-3 rounded-xl bg-success-gradient text-white font-semibold shadow-lg hover:scale-105 transition-all">
+
+            <i class="icon-circle-check me-2"></i>
+            Confirm Order
+        </button>
+
+        <button
+            class="px-6 py-3 rounded-xl bg-info-gradient text-white font-semibold shadow-lg hover:scale-105 transition-all">
+
+            <i class="icon-trash me-2"></i>
+            Cancel Bill
+        </button>
+
+    </div>
+
+</div>
 
             </div>
 
