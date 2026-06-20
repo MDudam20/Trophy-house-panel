@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en" data-parent="raw-material">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Trophy House </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="Dreams Technologies" name="author">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/trophy/fav.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/trophy/fav.png">
+    <!-- Theme Script -->
+    <script src="assets/js/theme-script.js"></script>
+    <!-- Phosphor CSS -->
+    <link rel="stylesheet" href="assets/libs/%40phosphor-icons/web/duotone/style.css">
+    <link rel="stylesheet" href="assets/libs/%40phosphor-icons/web/regular/style.css">
+    <link rel="stylesheet" href="assets/libs/%40phosphor-icons/web/fill/style.css">
+    <!-- Lucide CSS -->
+    <link rel="stylesheet" href="assets/libs/lucide-static/font/lucide.css">
+    <!-- Simplebar CSS -->
+    <link rel="stylesheet" href="assets/libs/simplebar/simplebar.min.css">
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="assets/libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="assets/libs/flatpickr/flatpickr.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" crossorigin href="assets/style-BXICD660.css">
+</head>
+
+<body>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Topbar Start -->
+        <header class="navbar-header">
+            <div class="topbar-menu flex items-center justify-between gap-2">
+                <div class="flex items-center gap-3">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="logo">
+
+                        <!-- Logo Normal -->
+                        <span class="logo-light">
+                            <span class="logo-lg"><img src="assets/img/trophy/logo-2.png" alt="logo"></span>
+                            <span class="logo-sm"><img src="assets/img/trophy/fav.png" alt="small logo"></span>
+                        </span>
+
+                        <!-- Logo Dark -->
+                        <span class="logo-dark">
+                            <span class="logo-lg"><img src="assets/img/trophy/logo-2.png" alt="dark logo"></span>
+                        </span>
+                    </a>
+
+                    <!-- Sidebar Toggle Button -->
+                    <button
+                        class="sidenav-toggle-btn topbar-link size-9 text-[20px] items-center justify-center rounded-full"
+                        id="toggle_btn">
+                        <i class="ph-duotone ph-arrow-left"></i>
+                    </button>
+
+                    <!-- Sidebar Mobile Button -->
+                    <a id="mobile_btn" class="mobile-btn" href="#sidebar">
+                        <i class="ph-duotone ph-list"></i>
+                    </a>
+
+                    <!-- Search -->
+                    <div class="header-search hidden lg:block">
+                        <div class="relative">
+                            <input type="text"
+                                class="ps-3 pe-12 py-1.5 h-9.5 bg-(--topbar-input-bg) border border-(--topbar-input-border) text-(--topbar-input-color) rounded-lg focus:border-(--topbar-input-border) placeholder:(-topbar-input-placeholder) focus:ring-0"
+                                placeholder="Search " autocomplete="off" id="searchInput">
+                            <button type="button"
+                                class="cursor-pointer w-9 p-1 text-xs gap-1 bg-(--topbar-input-bg) border border-(--topbar-input-border) text-(--topbar-input-icon) flex items-center justify-center absolute end-1.5 top-1/2 -translate-y-1/2 rounded-lg"
+                                id="shortcutHint">
+                                <i id="shortcutIcon" class="icon-command"></i> K
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="flex items-center gap-2">
+
+
+
+                    <!-- Expand Dropdown -->
+                    <div class="header-item hidden lg:block">
+                        <button type="button" class="topbar-link items-center justify-center btnFullscreen">
+                            <i class="ph-duotone ph-corners-out"></i>
+                        </button>
+                    </div>
+
+                    <!-- Light/Dark Mode Button -->
+                    <div class="header-item">
+                        <button class="topbar-link items-center justify-center light-dark-mode" type="button">
+                            <i class="ph-duotone ph-moon"></i>
+                        </button>
+                    </div>
+
+                    <!-- Notification Dropdown -->
+                    <div
+                        class="header-item hs-dropdown [--placement:bottom-right] [--auto-close:inside] hidden lg:block">
+                        <button class="topbar-link relative items-center justify-center">
+                            <i class="ph-duotone ph-bell"></i>
+                            <span class="block bg-danger size-1.75 absolute top-2.5 end-3 rounded-full"></span>
+                        </button>
+                        <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-102 p-5 bg-white border border-border-color shadow rounded-lg mt-2 z-1 notification-dropdown"
+                            role="menu" aria-orientation="vertical">
+
+                            <div class="flex items-center justify-between border-b border-border-color pb-3">
+                                <h6>Notifications</h6>
+                                <div class="border border-border-color rounded-lg flex items-center gap-1 p-1"
+                                    role="tablist">
+                                    <a href="#"
+                                        class="hs-tab-active:bg-light hs-tab-active:text-primary block py-1 px-2 text-gray-900 rounded-lg font-medium hover:bg-light hover:text-primary active"
+                                        aria-selected="true" data-hs-tab="#all" role="tab" aria-controls="all">All </a>
+                                    <a href="#"
+                                        class="hs-tab-active:bg-light hs-tab-active:text-primary block py-1 px-2 text-gray-900 rounded-lg font-medium hover:bg-light hover:text-primary"
+                                        aria-selected="false" data-hs-tab="#unread" role="tab"
+                                        aria-controls="unread">Unread</a>
+                                </div>
+                            </div>
+                            <div data-simplebar>
+                                <div id="all" role="tabpanel">
+                                    <div class="divide-y divide-border-color pt-3">
+
+                                        <!-- Item-->
+                                        <div class="notification-item relative flex py-3 pe-7 cursor-pointer">
+                                            <div class="relative size-10 shrink-0 me-2">
+                                                <img src="assets/avatar-02-CrDLg8sF.jpg"
+                                                    class="rounded-full border border-border-color" alt="user">
+                                                <span
+                                                    class="bg-primary-50 w-4 rounded-full absolute end-0 bottom-0 flex items-center justify-center text-[10px] text-primary">
+                                                    <i class="icon-bot"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1"><span class="text-gray-900 font-medium">Jack
+                                                        Michalak</span> updated agent settings</p>
+                                                <p class="text-[13px] mb-0">Just Now</p>
+                                            </div>
+                                            <a href="#" class="size-1.5 rounded-full bg-danger absolute end-3 top-5"
+                                                aria-label="Mark as Read"></a>
+                                        </div>
+
+                                        <!-- Item-->
+                                        <div class="notification-item relative flex py-3 pe-7 cursor-pointer">
+                                            <div class="relative size-10 shrink-0 me-2">
+                                                <img src="assets/avatar-03-CMAwRMpe.jpg"
+                                                    class="rounded-full border border-border-color" alt="user">
+                                                <span
+                                                    class="bg-primary-50 w-4 rounded-full absolute end-0 bottom-0 flex items-center justify-center text-[10px] text-primary">
+                                                    <i class="icon-key-round"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1"><span class="text-gray-900 font-medium">Lara
+                                                        Curtin</span> generated a new API key</p>
+                                                <p class="text-[13px] mb-0">10 min ago</p>
+                                            </div>
+                                            <a href="#" class="size-1.5 rounded-full bg-danger absolute end-3 top-5"
+                                                aria-label="Mark as Read"></a>
+                                        </div>
+
+                                        <!-- Item-->
+                                        <div class="notification-item relative flex py-3 pe-7 cursor-pointer">
+                                            <div class="relative size-10 shrink-0 me-2">
+                                                <img src="assets/avatar-04-a9Y1EXhu.jpg"
+                                                    class="rounded-full border border-border-color" alt="user">
+                                                <span
+                                                    class="bg-primary-50 w-4 rounded-full absolute end-0 bottom-0 flex items-center justify-center text-[10px] text-primary">
+                                                    <i class="icon-bot"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1"><span class="text-gray-900 font-medium">Brian
+                                                        Fulton</span> requested access to AI agent</p>
+                                                <p class="text-[13px] mb-0">2 hours ago</p>
+                                                <div class="flex items-center gap-2 mt-2">
+                                                    <a href="#"
+                                                        class="inline-flex items-center btn-xsmall bg-danger border border-danger text-white  hover:bg-danger-800 hover:border-danger-800 hover:text-white dark:text-white"><i
+                                                            class="icon-x me-1"></i>Decline</a>
+                                                    <a href="#"
+                                                        class="inline-flex items-center btn-xsmall bg-success border border-success text-white  hover:bg-success-800 hover:border-success-800 hover:text-white dark:text-white"><i
+                                                            class="icon-check-check me-1"></i>Accept</a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="size-1.5 rounded-full bg-danger absolute end-3 top-5"
+                                                aria-label="Mark as Read"></a>
+                                        </div>
+
+                                        <!-- Item-->
+                                        <div class="notification-item relative flex py-3 pe-7 cursor-pointer">
+                                            <div class="relative size-10 shrink-0 me-2">
+                                                <img src="assets/avatar-05-C9uvGOoI.jpg"
+                                                    class="rounded-full border border-border-color" alt="user">
+                                                <span
+                                                    class="bg-primary-50 w-4 rounded-full absolute end-0 bottom-0 flex items-center justify-center text-[10px] text-primary">
+                                                    <i class="icon-play"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1"><span class="text-gray-900 font-medium">Leona
+                                                        Daniels</span> ran a test execution</p>
+                                                <p class="text-[13px] mb-0">5 hours ago</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item-->
+                                        <div class="notification-item relative flex py-3 pe-7 cursor-pointer">
+                                            <div class="relative size-10 shrink-0 me-2">
+                                                <img src="assets/avatar-06-Cr67UvUS.jpg"
+                                                    class="rounded-full border border-border-color" alt="user">
+                                                <span
+                                                    class="bg-primary-50 w-4 rounded-full absolute end-0 bottom-0 flex items-center justify-center text-[10px] text-primary">
+                                                    <i class="icon-bot"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1"><span class="text-gray-900 font-medium">Roger
+                                                        Tucker</span> paused an agent workflow</p>
+                                                <p class="text-[13px] mb-0">1 day ago</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div id="unread" class="hidden" role="tabpanel">
+                                    <div class="divide-y divide-border-color pt-3">
+
+                                        <!-- Item-->
+                                        <div class="notification-item relative flex py-3 pe-7 cursor-pointer">
+                                            <div class="relative size-10 shrink-0 me-2">
+                                                <img src="assets/avatar-03-CMAwRMpe.jpg"
+                                                    class="rounded-full border border-border-color" alt="user">
+                                                <span
+                                                    class="bg-primary-50 w-4 rounded-full absolute end-0 bottom-0 flex items-center justify-center text-[10px] text-primary">
+                                                    <i class="icon-key-round"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1"><span class="text-gray-900 font-medium">Lara
+                                                        Curtin</span> generated a new API key</p>
+                                                <p class="text-[13px] mb-0">10 min ago</p>
+                                            </div>
+                                            <a href="#" class="size-1.5 rounded-full bg-danger absolute end-3 top-5"
+                                                aria-label="Mark as Read"></a>
+                                        </div>
+
+                                        <!-- Item-->
+                                        <div class="notification-item relative flex py-3 pe-7 cursor-pointer">
+                                            <div class="relative size-10 shrink-0 me-2">
+                                                <img src="assets/avatar-02-CrDLg8sF.jpg"
+                                                    class="rounded-full border border-border-color" alt="user">
+                                                <span
+                                                    class="bg-primary-50 w-4 rounded-full absolute end-0 bottom-0 flex items-center justify-center text-[10px] text-primary">
+                                                    <i class="icon-bot"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1"><span class="text-gray-900 font-medium">Jack
+                                                        Michalak</span> updated agent settings</p>
+                                                <p class="text-[13px] mb-0">Just Now</p>
+                                            </div>
+                                            <a href="#" class="size-1.5 rounded-full bg-danger absolute end-3 top-5"
+                                                aria-label="Mark as Read"></a>
+                                        </div>
+
+                                        <!-- Item-->
+                                        <div class="notification-item relative flex py-3 pe-7 cursor-pointer">
+                                            <div class="relative size-10 shrink-0 me-2">
+                                                <img src="assets/avatar-04-a9Y1EXhu.jpg"
+                                                    class="rounded-full border border-border-color" alt="user">
+                                                <span
+                                                    class="bg-primary-50 w-4 rounded-full absolute end-0 bottom-0 flex items-center justify-center text-[10px] text-primary">
+                                                    <i class="icon-bot"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1"><span class="text-gray-900 font-medium">Brian
+                                                        Fulton</span> requested access to AI agent</p>
+                                                <p class="text-[13px] mb-0">2 hours ago</p>
+                                                <div class="flex items-center gap-2 mt-2">
+                                                    <a href="#"
+                                                        class="inline-flex items-center btn-xsmall bg-danger border border-danger text-white  hover:bg-danger-800 hover:border-danger-800 hover:text-white dark:text-white"><i
+                                                            class="icon-x me-1"></i>Decline</a>
+                                                    <a href="#"
+                                                        class="inline-flex items-center btn-xsmall bg-success border border-success text-white  hover:bg-success-800 hover:border-success-800 hover:text-white dark:text-white"><i
+                                                            class="icon-check-check me-1"></i>Accept</a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="size-1.5 rounded-full bg-danger absolute end-3 top-5"
+                                                aria-label="Mark as Read"></a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="pt-3 border-t border-border-color text-center">
+                                <a href="#" class="text-center font-medium hover:text-primary">
+                                    View All
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- User Dropdown -->
+                    <div class="profile-dropdown hs-dropdown [--placement:bottom-right] [--auto-close:inside] relative">
+                        <a href="#"
+                            class="hs-dropdown-toggle relative size-10 text-base flex items-center justify-center rounded-full lg:ms-4"
+                            aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                            <img src="assets/avatar-01-C0dz1640.jpg" class="rounded-full border border-border-color"
+                                alt="user-image">
+                            <span
+                                class="bottom-0 end-1 absolute size-2 bg-success border border-white rounded-full"></span>
+                        </a>
+                        <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-50 p-5 bg-white border border-border-color shadow rounded-lg mt-2 z-1 divide-y divide-border-color"
+                            role="menu" aria-orientation="vertical">
+                            <div class="flex items-center pb-3">
+                                <div class="size-10 rounded-full relative me-2">
+                                    <img src="assets/avatar-01-C0dz1640.jpg"
+                                        class="rounded-full border border-border-color" alt="user-image">
+                                    <span
+                                        class="bottom-0 end-1 absolute size-2 bg-success border border-white rounded-full"></span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-dark mb-1">Trophy House</p>
+                                    <p class="text-[13px] mb-0">trophyhouse@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="py-3 space-y-1">
+                                <a href="profile.html"
+                                    class="flex items-center px-4 py-2 rounded-lg text-gray-900 hover:bg-primary-50 hover:text-primary focus:outline-hidden focus:bg-white">
+                                    <i class="ph-duotone ph-user-circle text-base me-2"></i>View Profile
+                                </a>
+
+                                <a href="general-settings.html"
+                                    class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary focus:outline-hidden focus:bg-white">
+                                    <i class="ph-duotone ph-gear-six text-base me-2"></i>Settings
+                                </a>
+                            </div>
+                            <div class="pt-3">
+                                <a href="login.html"
+                                    class="flex items-center px-4 py-1.75 rounded-lg text-sm text-danger hover:bg-primary-50 focus:outline-hidden focus:bg-white">
+                                    <i class="ph-duotone ph-sign-out text-base me-2"></i>Logout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- Topbar End -->
+
+        <!-- Two Col Sidebar -->
+        <aside class="two-col-sidebar" id="two-col-sidebar" aria-label="Main navigation">
+            <div class="sidebar sidebar-twocol flex border border-(--sidebar-border) rounded-lg ">
+                <div class="twocol-mini w-16">
+                    <div class="sidebar-left w-full flex items-center justify-between flex-col h-full p-3">
+                        <div>
+                            <a href="index.html" class="logo-small mb-6 block">
+                                <img src="assets/img/trophy/fav.png">
+                            </a>
+                            <div data-simplebar>
+                                <ul class="nav space-y-5 flex flex-col items-center" id="sidebar-tabs"
+                                    aria-orientation="vertical" role="tablist">
+                                    <li class="space-y-1">
+                                        <a href="#" class="active" title="Dashboard" role="tab"
+                                            data-hs-tab="#dashboard">
+                                            <span class="sidebar-icon"><i class="ph-duotone ph-circles-four"></i></span>
+                                        </a>
+                                        <!-- <a href="#" title="Information" role="tab" data-hs-tab="#info">
+                                            <span class="sidebar-icon"><i class="ph-duotone ph-align-top"></i></span>
+                                        </a> -->
+                                    </li>
+                                    <li class="space-y-1">
+                                        <a href="#" title="product" role="tab" data-hs-tab="#product">
+                                            <span class="sidebar-icon"><i class="ph-duotone ph-cube"></i></span>
+                                        </a>
+                                        <a href="#" title="order" role="tab" data-hs-tab="#order">
+                                            <span class="sidebar-icon"><i class="ph-duotone ph-drone"></i></span>
+                                        </a>
+                                        <a href="#" title="Profile" role="tab" data-hs-tab="#profile">
+                                            <span class="sidebar-icon"><i class="icon-users "></i></span>
+                                        </a>
+
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-profile flex flex-col items-center gap-2">
+                            <a href="#"
+                                class="flex items-center justify-center hover:text-(--sidebar-icon-active-item) hover:bg-(--sidebar-icon-active-bg)"
+                                title="Help">
+                                <i class="ph-duotone ph-question"></i>
+                            </a>
+                            <a href="login.html"
+                                class="flex items-center justify-center hover:text-(--sidebar-icon-active-item) hover:bg-(--sidebar-icon-active-bg)"
+                                title="Sign Out">
+                                <i class="ph-duotone ph-sign-out"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-right relative p-3 w-56">
+                    <div>
+                        <!-- Logo -->
+                        <div class="sidebar-logo mb-6">
+                            <a href="index.html" class="logo logo-normal">
+                                <img src="assets/img/trophy/logo-2.png" alt="logo">
+                            </a>
+                            <a href="index.html" class="logo logo-white hidden">
+                                <img src="assets/img/trophy/logo-2.png" alt="logo-white">
+                            </a>
+                            <a href="index.html" class="logo-small hidden">
+                                <img src="assets/img/trophy/fav.png">
+                            </a>
+                            <a href="#" class="sidebar-close" aria-label="Close sidebar">
+                                <i class="icon-x"></i>
+                            </a>
+                        </div>
+                        <!-- /Logo -->
+                        <div class="sidebar-scroll" data-simplebar>
+                            <div class="tab-content" id="sidebar-tab">
+                                <div class="tab-item" id="dashboard">
+                                    <ul>
+                                        <li class="menu-title text-[13px] text-(--sidebar-title) font-semibold mb-3">
+                                            Inventory Management</li>
+                                        <li>
+                                            <a href="index.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-wand-sparkles me-2"></i> Dashboard</a>
+                                        </li>
+
+                                        <li class="menu-title text-[13px] text-(--sidebar-title) font-semibold mb-3">
+                                            Information</li>
+                                        <li>
+                                            <a href="all_warehouse.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-warehouse me-2"></i>All Warehouse</a>
+                                        </li>
+                                        <li>
+                                            <a href="all-branch.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-network me-2"></i>All Branches</a>
+                                        </li>
+                                        <li>
+                                            <a href="all-manager.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-user-star me-2"></i>All Managers</a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+                                <div class="hidden tab-item" id="product">
+                                    <ul>
+                                        <li class="menu-title  text-[13px] text-(--sidebar-title) font-semibold mb-3">
+                                            All Product Info</li>
+
+                                        <li class="menu-title text-[13px] text-(--sidebar-title) font-semibold ">
+                                        </li>
+                                        <li>
+                                            <a href="category.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-layout-grid me-2"></i>Category</a>
+                                        </li>
+                                        <li>
+                                            <a href="add-product.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-circle-plus me-2"></i>Add Product</a>
+                                        </li>
+                                        <li>
+                                            <a href="updated-product.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-pencil me-2"></i>Updated Product</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="javascript:void(0);"
+                                                class="relative flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)">
+                                                <i class="icon-swatch-book text-base me-2"></i>All Product<span
+                                                    class="menu-arrow"></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="product.html">Fibre</a></li>
+                                                <li><a href="product.html">Wooden</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="raw-material.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-layers me-2"></i>Raw Materialst</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="out-of-stock.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-file-chart-pie me-2"></i>Out Of Stock product</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="hidden tab-item" id="order">
+                                    <ul>
+                                        <li class="menu-title text-[13px] text-(--sidebar-title) font-semibold mb-3">
+                                            Order History</li>
+                                        <li>
+                                            <a href="recent-order.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-shopping-cart me-2"></i>Recent Order</a>
+                                        </li>
+                                        <li>
+                                            <a href="cancel-order.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-git-branch me-2"></i>cancel Order</a>
+                                        </li>
+                                        <li>
+                                            <a href="all-branch-order.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-git-branch me-2"></i>All Branch Order</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="hidden tab-item" id="profile">
+                                    <ul>
+                                        <li class="menu-title text-[13px] text-(--sidebar-title) font-semibold mb-3">
+                                            Profile & Setting</li>
+                                        <li>
+                                            <a href="branch-user.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-users me-2"></i>All Branch User</a>
+                                        </li>
+                                        <li>
+                                            <a href="profile-setting.html"
+                                                class="flex items-center text-(--sidebar-menu-item) hover:bg-sidebar-menu-active-bg hover:text-(--sidebar-menu-active-item)"><i
+                                                    class="icon-settings me-2"></i>Profile Setting</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+        <!-- End Two Col Sidebar -->
+
+        <!-- Page Wrapper -->
+        <div class="page-wrapper">
+            <div class="p-6">
+
+                <!-- Breadcrumb -->
+                <div class="flex items-center justify-between flex-wrap page-breadcrumb gap-3 mb-6">
+                    <div class="my-auto">
+                        <nav class="flex" aria-label="Breadcrumb">
+                            <ol class="inline-flex items-center space-x-1 md:space-x-2">
+                                <li class="inline-flex items-center">
+                                    <a href="index.html"
+                                        class="inline-flex items-center gap-1 text-gray-600 hover:text-primary">
+                                        <i class="icon icon-house"></i>Home
+                                    </a>
+                                </li>
+                                <li><span class="text-default">/</span></li>
+                                <li class="inline-flex items-center">
+                                    <a href="index.html"
+                                        class="inline-flex items-center gap-1 text-gray-600 hover:text-primary">
+                                        Raw Materials
+                                    </a>
+                                </li>
+                                <li><span class="text-default">/</span></li>
+                                <li aria-current="page" class="text-gray-900"> All Raw Materials</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- <div class="flex items-center gap-3">
+                        <a href="add-product.html">
+                            <button type="button"
+                                class="btn bg-primary border border-primary text-white text-center flex items-center gap-x-2 hover:bg-primary-800 hover:border-primary-800 hover:text-white"
+                                aria-haspopup="dialog" aria-expanded="false" aria-controls="add-raw-material"
+                                data-hs-overlay="#add-raw-material">
+                                <i class="icon-plus"></i> Create Fibre Product
+                            </button>
+                        </a>
+                        <a href="add-product.html">
+                            <button type="button"
+                                class="btn bg-primary border border-primary text-white text-center flex items-center gap-x-2 hover:bg-primary-800 hover:border-primary-800 hover:text-white"
+                                aria-haspopup="dialog" aria-expanded="false" aria-controls="add-raw-material"
+                                data-hs-overlay="#add-raw-material">
+                                <i class="icon-plus"></i> New Raw Materials
+                            </button>
+                        </a>
+                    </div> -->
+                </div>
+                <!--End Breadcrumb -->
+
+                <div class="grid grid-cols-12 gap-4">
+
+                    <!-- LEFT SIDE -->
+                    <div class="col-span-8">
+                        <div class="grid grid-cols-1">
+                            <div class=" rounded-md border border-border-color">
+                                <div class="px-4 py-3 raw-material bg-primary-gradient">
+                                    <h5 class="text-[17.5px]">View All Raw Materials Here</h5>
+
+                                </div>
+                                <div
+                                    class="px-4 py-3 flex flex-wrap justify-center items-center gap-2 border-t border-border-color">
+                                    <div id="tablesearch"></div>
+                                    
+                                </div>
+                                <div>
+                                    <table class="datatable">
+                                        <thead class="border-b border-t border-border-color">
+                                            <tr>
+                                                <th class="px-4 py-2 bg-light text-dark text-start">Sr No.</th>
+                                                <th class="px-4 py-2 bg-light text-dark text-start">Selling Code</th>
+                                                <th class="px-4 py-2 bg-light text-dark text-start">Image</th>
+                                                <th class="px-4 py-2 bg-light text-dark text-start">Item</th>
+                                                <th class="px-4 py-2 bg-light text-dark text-start">Size</th>
+                                                <th class="px-4 py-2 bg-light text-dark text-start">Price</th>
+                                                <th class="px-4 py-2 bg-light text-dark text-start">Fibre Trophy</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+
+
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+
+
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+                                            <tr class="border-b border-border-color product-row">
+                                                <td class="px-4 py-3 text-start"><a href="#" class="inline-block hover:text-primary hover:underline">1</a>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-code="BRT.3127">BRT.3127</td>
+                                                <td class="px-4 py-3 text-start">
+                                                    <div class="flex items-center gap-2">
+                                                        <span class="flex shrink-0">
+                                                            <img class="w-8 h-8 border border-border-color" src="assets/avatar-01-C0dz1640.jpg" alt="avatar"
+                                                                data-image="assets/avatar-01-C0dz1640.jpg">
+                                                        </span>
+                                            
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-3 text-start" data-item="PLATE">PLATE</td>
+                                                <td class="px-4 py-3 text-start">8X10"</td>
+                                                <td class="px-4 py-3 text-start">4</td>
+                                            
+                                                <td class="px-4 py-3 text-center">
+                                                    <div class="action-wrapper d-flex align-items-center gap-2">
+                                            
+                                                        <label class="custom-check">
+                                                            <input type="checkbox" id="product1">
+                                                            <span class="checkmark">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </span>
+                                                        </label>
+                                            
+                                                        <button type="button" class="add-btn">
+                                                            Add
+                                                        </button>
+                                            
+                                                    </div>
+                                                </td>
+                                            
+                                            
+                                            
+                                            </tr>
+                                            
+
+
+                                        </tbody>
+                                    </table>
+                                    <div class="grid grid-cols-12 px-4 gap-2 py-3">
+                                        <div class="sm:col-span-4 col-span-12">
+                                            <div id="tablelength" class="flex justify-center sm:block"></div>
+                                        </div>
+                                        <div class="sm:col-span-4 col-span-12 flex items-center justify-center">
+                                            <div id="tablepage" class="flex justify-center sm:block"></div>
+                                        </div>
+                                        <div
+                                            class="sm:col-span-4 col-span-12 flex items-center sm:justify-end justify-center">
+                                            <div id="tableinfo" class="flex justify-center sm:block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT SIDE -->
+                    <div class="col-span-4">
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="selected-material-wrapper" >
+
+                                <div class="selected-header">
+                                    <h4>Selected Raw Materials <span>(3)</span></h4>
+
+                                    <button class="clear-cart">
+                                        <i class="icon icon-trophy"></i>
+                                    </button>
+                                </div>
+
+                                <div class="selected-body"  id="selectedProducts">
+
+                                    <!-- Material Card -->
+
+                                    <div class="material-card">
+
+                                        <button class="remove-btn">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+
+                                        <div class="material-image">
+                                            <img src="assets/img/trophy/t2.png">
+                                        </div>
+
+                                        <div class="material-info">
+
+                                            <h5>GANPATI MURTI GOLD</h5>
+
+                                            <div class="material-meta">
+                                                <span>Item : A</span>
+                                                <span>Size : 2.5"</span>
+                                            </div>
+
+                                            <div class="qty-wrapper">
+
+                                                <label>Qty :</label>
+
+                                                <div class="qty-box">
+                                                    <button>-</button>
+                                                    <input type="text" value="1">
+                                                    <button>+</button>
+                                                </div>
+                                                <button
+                                                    class="bg-danger-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 mx-auto">
+                                                    <i class="icon icon-circle-minus"></i>
+
+                                                </button>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="material-card">
+
+                                        <button class="remove-btn">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+
+                                        <div class="material-image">
+                                            <img src="assets/img/trophy/t2.png">
+                                        </div>
+
+                                        <div class="material-info">
+
+                                            <h5>GANPATI MURTI GOLD</h5>
+
+                                            <div class="material-meta">
+                                                <span>Item : A</span>
+                                                <span>Size : 2.5"</span>
+                                            </div>
+
+                                            <div class="qty-wrapper">
+
+                                                <label>Qty :</label>
+
+                                                <div class="qty-box">
+                                                    <button>-</button>
+                                                    <input type="text" value="1">
+                                                    <button>+</button>
+                                                </div>
+                                                <button
+                                                    class="bg-danger-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 mx-auto">
+                                                    <i class="icon icon-circle-minus"></i>
+
+                                                </button>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="material-card">
+
+                                        <button class="remove-btn">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+
+                                        <div class="material-image">
+                                            <img src="assets/img/trophy/t2.png">
+                                        </div>
+
+                                        <div class="material-info">
+
+                                            <h5>GANPATI MURTI GOLD</h5>
+
+                                            <div class="material-meta">
+                                                <span>Item : A</span>
+                                                <span>Size : 2.5"</span>
+                                            </div>
+
+                                            <div class="qty-wrapper">
+
+                                                <label>Qty :</label>
+
+                                                <div class="qty-box">
+                                                    <button>-</button>
+                                                    <input type="text" value="1">
+                                                    <button>+</button>
+                                                </div>
+                                                <button
+                                                    class="bg-danger-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 mx-auto">
+                                                    <i class="icon icon-circle-minus"></i>
+
+                                                </button>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="material-card">
+
+                                        <button class="remove-btn">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+
+                                        <div class="material-image">
+                                            <img src="assets/img/trophy/t2.png">
+                                        </div>
+
+                                        <div class="material-info">
+
+                                            <h5>GANPATI MURTI GOLD</h5>
+
+                                            <div class="material-meta">
+                                                <span>Item : A</span>
+                                                <span>Size : 2.5"</span>
+                                            </div>
+
+                                            <div class="qty-wrapper">
+
+                                                <label>Qty :</label>
+
+                                                <div class="qty-box">
+                                                    <button>-</button>
+                                                    <input type="text" value="1">
+                                                    <button>+</button>
+                                                </div>
+                                                <button
+                                                    class="bg-danger-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 mx-auto">
+                                                    <i class="icon icon-circle-minus"></i>
+
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="material-card">
+
+                                        <button class="remove-btn">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+
+                                        <div class="material-image">
+                                            <img src="assets/img/trophy/t2.png">
+                                        </div>
+
+                                        <div class="material-info">
+
+                                            <h5>GANPATI MURTI GOLD</h5>
+
+                                            <div class="material-meta">
+                                                <span>Item : A</span>
+                                                <span>Size : 2.5"</span>
+                                            </div>
+
+                                            <div class="qty-wrapper">
+
+                                                <label>Qty :</label>
+
+                                                <div class="qty-box">
+                                                    <button>-</button>
+                                                    <input type="text" value="1">
+                                                    <button>+</button>
+                                                </div>
+                                                <button
+                                                    class="bg-danger-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 mx-auto">
+                                                    <i class="icon icon-circle-minus"></i>
+
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    
+
+                                </div>
+
+                                <div class="selected-footer text-center">
+
+                                    <a href="add-fibre-product.html">
+                                        <button type="button"
+                                            class="btn bg-primary border border-primary text-white d-flex justify-center items-center gap-x-2 hover:bg-primary-800 hover:border-primary-800 hover:text-white"
+                                            aria-haspopup="dialog" aria-expanded="false"
+                                            aria-controls="add-raw-material" data-hs-overlay="#add-raw-material">
+                                            <i class="icon-plus"></i> Fibre Product
+                                        </button>
+                                    </a>
+
+                                    <div class="footer-note">
+                                        Please review selected materials before creating.
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Start grid -->
+                <!-- <div class="grid grid-cols-1">
+                    <div class=" rounded-md border border-border-color">
+                        <div class="px-4 py-3 raw-material bg-primary-gradient">
+                            <h5 class="text-[17.5px]">View All Raw Materials Here</h5>
+                            
+                        </div>
+                        <div class="px-4 py-3 flex flex-wrap justify-center items-center gap-2 border-t border-border-color">
+                                <div id="tablesearch"></div>
+                                <div
+                                    class="hs-dropdown [--placement:bottom-right] [--auto-close:inside] relative inline-flex">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle btn h-[35px] cursor-pointer inline-flex items-center gap-x-2 font-normal rounded-lg border border-border-color bg-white text-gray-900 hover:bg-primary hover:border-primary hover:text-white focus:bg-primary focus:border-primary focus:text-white  focus:outline-hidden"
+                                        aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                        <i class="icon-arrow-up-narrow-wide"></i>Sort
+                                    </button>
+
+                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 min-w-50 bg-white border border-border-color shadow rounded-lg mt-2 z-1 hidden"
+                                        role="menu" aria-orientation="vertical" tabindex="-1"
+                                        data-placement="bottom-end"
+                                        style="transform: translate3d(1051.33px, 207.833px, 0px);">
+                                        <div class="p-2 space-y-1">
+                                            <a class="flex items-center px-4 py-2 rounded-lg text-gray-900 hover:bg-primary-50 hover:text-primary hover:bg-primary-50 focus:outline-hidden focus:bg-white"
+                                                href="#">
+                                                Newest
+                                            </a>
+                                            <a class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary hover:bg-primary-50 focus:outline-hidden focus:bg-white"
+                                                href="#">
+                                                Oldest
+                                            </a>
+                                            <a class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary focus:outline-hidden focus:bg-white"
+                                                href="#">
+                                                Recently Created
+                                            </a>
+                                            <a class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary focus:outline-hidden focus:bg-white"
+                                                href="#">
+                                                Last Modified
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div>
+                            <table class="datatable">
+                                <thead class="border-b border-t border-border-color">
+                                    <tr>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Sr No.</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Selling Code</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Image</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Item</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Size</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Price</th>
+                                        <th class="px-4 py-2 bg-light text-dark text-start">Fibre Trophy</th>
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-border-color">
+                                        <td class="px-4 py-3 text-start"><a href="#"
+                                                class="inline-block hover:text-primary hover:underline">1</a>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">BRT.3127</td>
+                                        <td class="px-4 py-3 text-start">
+                                            <div class="flex items-center gap-2">
+                                                <span class="flex shrink-0">
+                                                    <img class="w-8 h-8 border border-border-color"
+                                                        src="assets/avatar-01-C0dz1640.jpg" alt="avatar">
+                                                </span>
+                                                
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-start">PLATE</td>
+                                        <td class="px-4 py-3 text-start">8X10"</td>
+                                        <td class="px-4 py-3 text-start">4</td>
+                                        
+                                         <td class="px-4 py-3 text-start ">
+                                           <button type="button"
+                                                class="btn-small flex items-center justify-center bg-gradient-to-r border border-purple text-success text-center hover:bg-success-200 rounded-full"><i
+                                                    class="icon icon-plus"></i></button>
+                                        </td>
+                                        
+                                       
+                                        
+                                    </tr>
+                                    
+                                   
+                                </tbody>
+                            </table>
+                            <div class="grid grid-cols-12 px-4 gap-2 py-3">
+                                <div class="sm:col-span-4 col-span-12">
+                                    <div id="tablelength" class="flex justify-center sm:block"></div>
+                                </div>
+                                <div class="sm:col-span-4 col-span-12 flex items-center justify-center">
+                                    <div id="tablepage" class="flex justify-center sm:block"></div>
+                                </div>
+                                <div class="sm:col-span-4 col-span-12 flex items-center sm:justify-end justify-center">
+                                    <div id="tableinfo" class="flex justify-center sm:block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- End grid -->
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer px-6 pb-3 flex items-center justify-between gap-2 flex-col sm:flex-row">
+                <p> &copy; All Copyright 2025 By Trophy House || Powered By <a href="">sparkmindscoders</a></p>
+                <div class="flex items-center gap-2 flex-wrap">
+                    <a href="#" class="hover:text-primary">Docs</a>
+                    <span>/</span>
+                    <a href="#" class="hover:text-primary">Purchase</a>
+                    <span>/</span>
+                    <a href="#" class="hover:text-primary">FAQ</a>
+                    <span>/</span>
+                    <a href="#" class="hover:text-primary">Support</a>
+                </div>
+            </footer>
+            <!-- End Footer -->
+
+        </div>
+        <!-- End Page Wrapper -->
+
+    </div>
+    <!-- End Main Wrapper -->
+
+
+
+    <script>
+document.querySelectorAll('.action-wrapper').forEach(wrapper => {
+    const checkbox = wrapper.querySelector('input[type="checkbox"]');
+    const button = wrapper.querySelector('.add-btn');
+
+    button.addEventListener('click', function() {
+        checkbox.checked = !checkbox.checked;
+
+        if (checkbox.checked) {
+            button.classList.add('added');
+            button.textContent = 'Added';
+        } else {
+            button.classList.remove('added');
+            button.textContent = 'Add';
+        }
+    });
+});
+</script>
+
+    <script>
+        document.getElementById("addRow").addEventListener("click", function () {
+
+            let firstRow = document.querySelector(".selling-row");
+            let clone = firstRow.cloneNode(true);
+
+            // inputs clear karo
+            clone.querySelectorAll("input").forEach(input => {
+                input.value = "";
+            });
+
+            // delete button add karo agar nahi hai
+            if (!clone.querySelector(".deleteRow")) {
+
+                const deleteDiv = document.createElement("div");
+                deleteDiv.className = "sm:col-span-12 col-span-12 text-end mt-2";
+
+                deleteDiv.innerHTML = `
+            <button type="button"
+                class="btn deleteRow inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-primary-800 focus:outline-hidden focus:bg-primary-800 disabled:opacity-50 disabled:pointer-events-none">
+                <i class="icon-trash"></i> Delete
+            </button>
+        `;
+
+                clone.appendChild(deleteDiv);
+            }
+
+            document.getElementById("rowsContainer").appendChild(clone);
+        });
+
+        // Delete Row
+        document.addEventListener("click", function (e) {
+
+            const deleteBtn = e.target.closest(".deleteRow");
+
+            if (deleteBtn) {
+                deleteBtn.closest(".selling-row").remove();
+            }
+        });
+    </script>
+
+    <!-- Simplebar JS -->
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+
+    <!-- Preline JS -->
+    <script src="assets/libs/preline/preline.js"></script>
+
+    <!-- Apexchart JS -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/apex-chart-data.js"></script>
+
+    <!-- Choices Js -->
+    <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+
+
+
+    <!-- Jquery JS -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+
+    <!-- Datatable JS -->
+    <script src="assets/libs/datatables.net/js/dataTables.min.js"></script>
+    <script src="assets/js/datatable.js"></script>
+
+    <!-- Flatpickr JS -->
+    <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+        integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"3da6d75f577a49df823ac943638cba73","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

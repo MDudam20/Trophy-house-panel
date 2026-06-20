@@ -580,36 +580,27 @@
                         </nav>
                     </div>
                     <div class="flex items-center gap-3">
-                        <div class="hs-dropdown [--placement:bottom-right] [--auto-close:inside] relative inline-flex">
+                        <a href="create-fibre-product.html">
                             <button type="button"
-                                class="hs-dropdown-toggle cursor-pointer btn inline-flex items-center gap-x-2 text-sm font-normal rounded-lg border border-border-color bg-white text-gray-900 hover:bg-primary hover:border-primary hover:text-white focus:bg-primary focus:border-primary focus:text-white  focus:outline-hidden"
-                                aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                                <i class="icon-arrow-down-to-line font-normal"></i> Export
-                            </button>
-
-                            <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-50 bg-white border border-border-color shadow rounded-lg mt-2 z-1"
-                                role="menu" aria-orientation="vertical" tabindex="-1">
-                                <div class="p-2 space-y-1">
-                                    <a class="flex items-center px-4 py-2 rounded-lg text-gray-900 hover:bg-primary-50 hover:text-primary focus:outline-hidden focus:bg-white"
-                                        href="#">
-                                        Expert as PDF
-                                    </a>
-                                    <a class="flex items-center px-4 py-2 rounded-lg text-sm text-gray-900 hover:bg-primary-50 hover:text-primary focus:outline-hidden focus:bg-white"
-                                        href="#">
-                                        Expert as Excel
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button"
+                            class="btn bg-primary border border-primary text-white text-center flex items-center gap-x-2 hover:bg-primary-800 hover:border-primary-800 hover:text-white"
+                            aria-haspopup="dialog" aria-expanded="false" aria-controls="add-raw-material"
+                            data-hs-overlay="#add-raw-material">
+                            <i class="icon-plus"></i> Create Fibre Product
+                        </button>
+                        </a>
+                        <a href="add-raw-material.html">
+                            <button type="button"
                             class="btn bg-primary border border-primary text-white text-center flex items-center gap-x-2 hover:bg-primary-800 hover:border-primary-800 hover:text-white"
                             aria-haspopup="dialog" aria-expanded="false" aria-controls="add-raw-material"
                             data-hs-overlay="#add-raw-material">
                             <i class="icon-plus"></i> New Raw Materials
                         </button>
+                        </a>
                     </div>
                 </div>
                 <!--End Breadcrumb -->
+
+                
 
                 <!-- Start grid -->
                 <div class="grid grid-cols-1">
@@ -692,7 +683,10 @@
                                         <td class="px-4 py-3 text-start">
                                             ₹ 5448
                                         </td>
-                                        <td class="px-4 py-3 text-start">22 Mar 2026</td>
+                                        <td class="px-4 py-3 text-start">
+                                        18/06/2026
+                                        </td>
+                                        
                                         
                                         <td class="px-4 py-3 text-start flex gap-2">
                                             <button type="button"
@@ -705,79 +699,9 @@
                                                 class="btn-small flex items-center justify-center bg-danger-100 border border-danger text-danger text-center hover:bg-danger-200 rounded-full"><i
                                                     class="icon icon-trash-2"></i></button>
                                         </td>
-                                    </tr>
-                                    <tr class="border-b border-border-color">
-                                        <td class="px-4 py-3 text-start"><a href="#"
-                                                class="inline-block hover:text-primary hover:underline">2</a>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">BRT.3127</td>
-                                        <td class="px-4 py-3 text-start">BRT.3127</td>
-                                        <td class="px-4 py-3 text-start">
-                                            <div class="flex items-center gap-2">
-                                                <span class="flex shrink-0">
-                                                    <img class="w-8 h-8 border border-border-color"
-                                                        src="assets/avatar-01-C0dz1640.jpg" alt="avatar">
-                                                </span>
-                                                
-                                            </div>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">A / 10"</td>
-                                        <td class="px-4 py-3 text-start">8306</td>
-                                        <td class="px-4 py-3 text-start">₹ 1362</td>
-                                        <td class="px-4 py-3 text-start">4</td>
-                                        <td class="px-4 py-3 text-start">
-                                            ₹ 5448
-                                        </td>
-                                        <td class="px-4 py-3 text-start">22 Mar 2026</td>
                                         
-                                        <td class="px-4 py-3 text-start flex gap-2">
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-primary-100 border border-primary text-primary text-center hover:bg-primary-200 rounded-full"><i
-                                                    class="icon icon-square-pen"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-success-100 border border-success text-success text-center hover:bg-success-200 rounded-full"><i
-                                                    class="icon icon-eye"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-danger-100 border border-danger text-danger text-center hover:bg-danger-200 rounded-full"><i
-                                                    class="icon icon-trash-2"></i></button>
-                                        </td>
                                     </tr>
-                                    <tr class="border-b border-border-color">
-                                        <td class="px-4 py-3 text-start"><a href="#"
-                                                class="inline-block hover:text-primary hover:underline">3</a>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">BRT.3127</td>
-                                        <td class="px-4 py-3 text-start">BRT.3127</td>
-                                        <td class="px-4 py-3 text-start">
-                                            <div class="flex items-center gap-2">
-                                                <span class="flex shrink-0">
-                                                    <img class="w-8 h-8 border border-border-color"
-                                                        src="assets/avatar-01-C0dz1640.jpg" alt="avatar">
-                                                </span>
-                                                
-                                            </div>
-                                        </td>
-                                        <td class="px-4 py-3 text-start">A / 10"</td>
-                                        <td class="px-4 py-3 text-start">8306</td>
-                                        <td class="px-4 py-3 text-start">₹ 1362</td>
-                                        <td class="px-4 py-3 text-start">4</td>
-                                        <td class="px-4 py-3 text-start">
-                                            ₹ 5448
-                                        </td>
-                                        <td class="px-4 py-3 text-start">22 Mar 2026</td>
-                                        
-                                        <td class="px-4 py-3 text-start flex gap-2">
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-primary-100 border border-primary text-primary text-center hover:bg-primary-200 rounded-full"><i
-                                                    class="icon icon-square-pen"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-success-100 border border-success text-success text-center hover:bg-success-200 rounded-full"><i
-                                                    class="icon icon-eye"></i></button>
-                                            <button type="button"
-                                                class="btn-small flex items-center justify-center bg-danger-100 border border-danger text-danger text-center hover:bg-danger-200 rounded-full"><i
-                                                    class="icon icon-trash-2"></i></button>
-                                        </td>
-                                    </tr>
+                                    
                                    
                                 </tbody>
                             </table>

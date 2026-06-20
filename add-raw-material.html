@@ -569,7 +569,7 @@
                                 </li>
                                 <li><span class="text-default">/</span></li>
                                
-                                <li aria-current="page" class="text-gray-900">Add product</li>
+                                <li aria-current="page" class="text-gray-900">Add Raw Product</li>
                             </ol>
                         </nav>
                     </div>
@@ -603,8 +603,8 @@
                 <!-- Start grid -->
                 <div class="grid grid-cols-1">
                     <div class="bg-white rounded-md border border-border-color">
-                        <div class="px-4 py-3 flex items-center justify-between flex-wrap gap-2">
-                            <h5 class="text-[17.5px]">Add New Products Here</h5>
+                        <div class="px-4 py-3 flex items-center justify-center flex-wrap gap-2 bg-primary-gradient">
+                            <h5 class="text-[17.5px]">Add New Add Raw Product Here</h5>
                             
                         </div>
                         <div class="p-5">
@@ -629,15 +629,14 @@
                                 </div>
                             </div>
                             <div class="sm:col-span-6 col-span-12">
-                                <label for="input-label" class="block text-sm font-medium mb-2 text-dark">Select Type : </label>
-                                <select
-                                    class="form-input block w-full bg-light border-border-color rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none">
-                                    <option selected="">Open this select menu</option>
-                                    <option>Raw</option>
-                                    <option>Product</option>
-                            
-                                </select>
+                                <label for="user-name" class="mb-1 block text-sm font-semibold text-dark">Type Of Product
+                                    <span class="text-danger">*</span></label>
+                                <div class="relative">
+                                    <input id="user-name" type="text" value="Raw Material"
+                                        class="form-input text-dark bg-white block w-full border border-border-color rounded-lg focus:ring-0 focus:outline-none focus:border-border-color">
+                                </div>
                             </div>
+                
                             <div class="sm:col-span-6 col-span-12">
                                 <label for="input-label" class="block text-sm font-medium mb-2 text-dark">Select Category Name : </label>
                                 <select
@@ -741,8 +740,8 @@
                         </div>
                         </div>
                         <button type="button" id="addRow"
-                            class="btn mb-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-primary-800 focus:outline-hidden focus:bg-primary-800 disabled:opacity-50 disabled:pointer-events-none flex justify-center">
-                            Add More <i class="icon-plus"></i>
+                            class="btn inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-primary-800 focus:outline-hidden focus:bg-primary-800 disabled:opacity-50 disabled:pointer-events-none flex justify-center">
+                            Add User <i class="icon-plus"></i>
                         </button>
                         <!-- End grid -->
                     </form>
@@ -837,31 +836,15 @@ document.addEventListener("click", function (e) {
     <!-- Apexchart JS -->
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
     <script src="assets/js/apex-chart-data.js"></script>
-
-
-
-
-
-
-
-
     <!-- Choices Js -->
     <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-
-
-
     <!-- Jquery JS -->
     <script src="assets/libs/jquery/jquery.min.js"></script>
-
     <!-- Datatable JS -->
     <script src="assets/libs/datatables.net/js/dataTables.min.js"></script>
     <script src="assets/js/datatable.js"></script>
-
-
-
     <!-- Flatpickr JS -->
     <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
-
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
 
